@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<title>Perfume Website</title>
+</head>
+<body>
+<header>
+	
+    <nav>
+		<a href="#" >Home</a>
+		<a href="/shop.html">Shop</a>
+		<a href="#">About</a>
+		<a href="/rewards.html">Rewards</a>
+		<a href="#">Contact US</a>
+		<a  class="btn-login" onclick="showModal()" style="float:right">Login</a>
+		<div class="overlay"></div>
+<div class="loginform">
+    <span onclick="closeModal()">&times</span>
+    <form action="">
+        <div class="user">
+            <label for="">UserName</label>
+            <input type="text">
+        </div >
+        <div class="pass" >
+            <label for="">Password</label>
+            <input type="password">
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+	</nav>
+</header>
+<main>
+	<div class="carousel">
+		
+		
+		<div class="slides">
+		  <div class="slide">
+			<img src="img2.jpeg" alt="Slide 1">
+		  </div>
+		  <div class="slide">
+			<img src="img1.jpg" alt="Slide 2">
+		  </div>
+		  <div class="slide">
+			<img src="imgg.jpg" alt="Slide 3">
+		  </div>
+		</div>
+		
+		<div class="controls">
+		  <label for="slide1"></label>
+		  <label for="slide2"></label>
+		  <label for="slide3"></label>
+		</div>
+	  </div>
+	  
+	  <div class="brand">
+
+		<h2>Top Fragnance Brands</h2>
+		
+		<div class="brand1">
+<div class="brname">
+	<img src="Chanel.png" alt="" srcset="">
+	<p>Chanel</p>
+</div>
+<div class="brname">
+	<img src="gucci.png" alt="" srcset="">
+	<p>Gucci</p></div>
+<div class="brname">
+	<img src="d&g.png" alt="" srcset="">
+	<p>Douce And Gabbana</p>
+</div>
+
+
+
+		</div>
+		<div class="brand2">
+			<div class="brname">
+				<img src="Victorias Secret.png" alt="" srcset="">
+	<p>Victorias Secret</p>
+			</div>
+			<div class="brname">
+				<img id="Versace" src="Versace.png" alt="" srcset="">
+	<p>Versace</p>
+			</div>
+			<div class="brname">
+				<img src="prada.png" alt="" srcset="">
+	<p>Prada</p>
+			</div>
+
+
+		</div>
+
+
+	  </div>
+
+	  <div class="left" >
+		<img src="perfume ban.jpg" alt="" srcset="">
+		<div class="in-left">
+<h3>We are Canada's true online WAREHOUSE SALE for authentic designer and niche fragrances.</h3>
+<p>Shop the best deals on perfume and cologne online! As North America's most trusted and respected online fragrance discounter, we always guarantee a perfect order and an unparalleled and stellar perfumeonline is canada's leading and most reputable perfume store bringing consumers the best deals via the internet marketplace. you will find highly discounted perfumes  and colognes from a vast range of authentic and genuine fragrance brands. when buying from us you can save up to 80% on fragrances, including luxury designer scents. at perfumeonline we truly have an established and genuine passion for delighting customers and providing them with the best quality in service standards and our proficient knowledge of varying scents. these key qualities have set us apart and made us the leaders within canada, notably, making us the #1 perfume distributor online. our dedicated customer service representatives are always ready to help you in fulfilling your fragrance needs.</p>
+</div>
+	  </div>
+
+</main>
+<footer>
+
+	
+		<div class="logo">
+		  <!-- Replace with your logo HTML code or image -->
+		  <img src="logo-transparent-png.png" alt="FragStore">
+		</div>
+		<div class="contact-info">
+		  <p>Contact Information:</p>
+		  <ul>
+			<li>Phone:+12361794508</li>
+			<li>Email: <a href="mailto:BusinesswithFrag@gmail.com">BusinesswithFrag@gmail.com</a></li>
+		  </ul>
+		</div>
+		<div class="links">
+		  <p>Links:</p>
+		  <ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/shop">Shop</a></li>
+			<li><a href="/about">About Us</a></li>
+			<li><a href="/contact">Contact Us</a></li>
+		  </ul>
+		</div>
+		<div class="social-media">
+		  <p>Social Media:</p>
+		  <ul>
+			<li><a href="https://www.facebook.com/">Facebook</a></li>
+			<li><a href="https://www.instagram.com/">Instagram</a></li>
+			<li><a href="https://twitter.com/">Twitter</a></li>
+			<li><a href="https://www.pinterest.com/">Pinterest</a></li>
+		  </ul>
+		</div>
+		<div class="newsletter">
+		  <p>Newsletter Subscription:</p>
+		  <form action="/subscribe" method="post">
+			<!-- Replace with your newsletter subscription form HTML code -->
+			<input type="email" name="email" placeholder="Enter your email address" required>
+			<input type="submit" value="Subscribe">
+		  </form>
+		</div>
+		<div class="copyright">
+		  <p>&copy; 2023 FragStore Inc. All rights reserved.</p>
+		</div>
+	  </footer>
+	  
+
+	
+</body>
+
+<script>
+    function showModal(){
+        document.querySelector('.overlay').classList.add('showoverlay');
+        document.querySelector('.loginform').classList.add('showloginform');
+    }
+    function closeModal(){
+        document.querySelector('.overlay').classList.remove('showoverlay');
+        document.querySelector('.loginform').classList.remove('showloginform');
+    }
+</script>
+</html>
+
