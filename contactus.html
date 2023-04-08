@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conatct Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/shop.html">Shop</a>
+            <a href="/about.html">About</a>
+            <a href="/rewards.html">Rewards</a>
+           
+			<a  class="btn-login" onclick="showModal()" style="float:right">Login</a>
+		<div class="overlay"></div>
+<div class="loginform">
+    <span onclick="closeModal()">&times</span>
+    <form action="">
+        <div class="user">
+            <label for="">UserName</label>
+            <input type="text">
+        </div >
+        <div class="pass" >
+            <label for="">Password</label>
+            <input type="password">
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+	</nav>
+</header>
+    <main>
+
+        <div class="sign1" >
+            <div class="sign-up" >
+              <h2>Contact US </h2>
+              </div>
+            <div class="sign-up" >
+                <label for="name">Name</label> <br>
+                  <input class="into" type="text" placeholder="Enter Your name" name="name" required>
+            </div>
+                <div class="sign-up" >
+                 <label for="telephone">Telephone</label> <br>
+                  <input class="into" type="tel" placeholder="Enter Your Telephone" name="number" required>
+                </div>
+            
+            <div class="sign-up" >
+                 <label for="email">Email</label> <br>
+                  <input class="into" type="Email" placeholder="Enter Your Email" name="email" required>
+                </div>
+            
+            
+                <div class="sign-up" >
+            <label for="message">Message</label> <br>
+                  <textarea class="into" name="message" placeholder="Enter your message" id="" cols="60" rows="10"></textarea>
+                  
+                </div>
+                
+                <div class="sign-up" >
+                 <button type="button" class="btn signbtn btn-success"> Send Message</button>
+                </div>
+                
+              </div>
+            </main>
+            
+    <footer>
+		<div class="logo">
+		  <!-- Replace with your logo HTML code or image -->
+		  <img src="logo-transparent-png.png" alt="FragStore">
+		</div>
+		<div class="contact-info">
+		  <p>Contact Information:</p>
+		  <ul>
+			<li>Phone:+12361794508</li>
+			<li>Email: <a href="mailto:BusinesswithFrag@gmail.com">BusinesswithFrag@gmail.com</a></li>
+		  </ul>
+		</div>
+		<div class="links">
+		  <p>Links:</p>
+		  <ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/shop.html">Shop</a></li>
+			<li><a href="/contact.html">Contact Us</a></li>
+		  </ul>
+		</div>
+		<div class="social-media">
+		  <p>Social Media:</p>
+		  <ul>
+			<li><a href="https://www.facebook.com/">Facebook</a></li>
+			<li><a href="https://www.instagram.com/">Instagram</a></li>
+			<li><a href="https://twitter.com/">Twitter</a></li>
+			<li><a href="https://www.pinterest.com/">Pinterest</a></li>
+		  </ul>
+		</div>
+		<div class="newsletter">
+		  <p>Newsletter Subscription:</p>
+		  <form action="/subscribe" method="post">
+			<!-- Replace with your newsletter subscription form HTML code -->
+			<input type="email" name="email" placeholder="Enter your email address" required>
+			<input type="submit" value="Subscribe">
+		  </form>
+		</div>
+		<div class="copyright">
+		  <p>&copy; 2023 FragStore Inc. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+
+<script>
+    function showModal(){
+        document.querySelector('.overlay').classList.add('showoverlay');
+        document.querySelector('.loginform').classList.add('showloginform');
+    }
+    function closeModal(){
+        document.querySelector('.overlay').classList.remove('showoverlay');
+        document.querySelector('.loginform').classList.remove('showloginform');
+    }
+</script>
+</html>

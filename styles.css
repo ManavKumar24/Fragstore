@@ -1,0 +1,417 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0px;}
+
+nav {
+    background-color: #FFE5CA;
+    overflow: hidden;
+    padding: 10px;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+    background-color: #DFA67B;
+    color: #333;
+}
+
+.carousel {
+    position: relative;
+    margin: 50px;
+  }
+  
+  
+  
+  .slides {
+    
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slide {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    justify-content: center;
+  }
+  
+  img {
+
+    width: 90%;
+    height: 600px;
+    background: fixed;
+  }
+  
+  .controls {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  
+.btn-login{
+  margin-top:5px ;
+    color:black;
+    padding:10px 15px;
+    cursor:pointer;
+}
+.overlay{
+    width:100%;
+    position:fixed;
+    top:0;
+    height:100vh;
+    background:rgba(0,0,0,0.5);
+    z-index:-1;
+    opacity:0;
+    transition:1s;
+}
+
+.loginform{
+  align-items: center;
+  height:  40%;
+    width:30%;
+    padding:30px 20px;
+    background-color:lightsalmon;
+    position:absolute;
+    left:50%;
+    top:-50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 0px 0px 10px 3px #ccc;
+    z-index:9;
+    transition:2s;
+}
+.loginform input{
+    width:60%;
+    height:30px;
+    margin-bottom:20px;
+}
+
+.loginform label{
+ margin: 10px 0;
+}
+
+.loginform form{
+  display :flex;
+  flex-direction: column;
+}
+.user ,.pass {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.loginform button{
+    background-color: black;
+    color:white;
+    padding:10px 15px;
+    margin: 10px auto;
+}
+.loginform span{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:30px;
+    height:30px;
+    background-color: lightgreen;
+    text-align:center;
+    color:white;
+    line-height: 30px;
+    cursor:pointer;
+}
+.showoverlay{
+    opacity:1;
+    z-index:1;
+}
+.showloginform{
+    top:50%;
+}
+  /* home page Brands */
+
+  .brand{
+    background-color: #B0DAFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+height: 580px;
+width: 100%;
+  }
+
+  .brand h2{
+    align-self: center;
+
+  }
+
+  .brand1,.brand2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    
+  }
+
+  .brname{
+    display: flex;
+    background-color: #fff;
+    margin: auto;
+    flex-direction: row;
+width: 330px;
+height:180px;
+  }
+
+  .brname p{
+    align-self: center;
+    margin: auto;
+  }
+
+  .brand1 img{
+    height:180px;
+    width: 150px;
+    mix-blend-mode: multiply;
+  }
+
+  .brand2 img{
+    padding-top: 12px;
+    height:150px;
+    width: 160px;
+    align-self: center;
+    mix-blend-mode: multiply;
+  }
+
+  .left{
+    display: flex;
+    flex-direction: row;
+    padding:70px;
+    margin: 7px auto;
+font-size: 18px;
+line-height: 1.4;
+
+  }
+
+  .left img{
+    width: 35%;
+    height: 25%;
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .left h3{
+    margin-top: 55px;
+  }
+
+  .left p{
+margin-top: 40px;
+  }
+
+/* footer */
+/* CSS for the footer section */
+
+footer {
+  background-color:#E1D7C6;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+footer a{
+  text-decoration: none;
+  color: #DFA67B;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input[type="email"] {
+  flex: 1;
+  padding: 5px;
+}
+
+.newsletter input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 3px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.copyright {
+  margin-top: 30px;
+}
+
+/* rewards */
+.msg{
+   margin: 50px auto;
+  width: 60%;
+  justify-content:center;
+
+    width: 60%;
+  line-height:2;
+}
+
+/* shop page */
+.shopcon {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.in-shopcon{
+  background-color: #FFD4D4; 
+  box-shadow: 0px 0px 10px #FFEFD5; 
+  display: flex;
+  flex-direction:row ;
+  margin:50px 50px;
+  padding:20px;
+  position: relative;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.in-shopcon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%; /* Set initial position below the box */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: peachpuff; /* Replace with your desired peach color */
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 0.3s ease-in-out; /* Add transition effect for opacity property */
+}
+
+.in-shopcon:hover {
+  transform: translateY(-10px); /* Update transform property on hover to lift the box */
+}
+
+
+.in-shopcon img{
+width:20%;
+height: 35%;
+}
+/* 
+.shopcon div{
+  display: flex;
+  flex-direction: column;
+} */
+
+.content-in{
+  display: flex;
+  flex-direction: column;
+  margin: 10px ;
+  padding:5px 55px;
+  line-height: 1.7;
+  
+}
+
+.content-in h3{
+  margin-bottom: 10px;
+}
+
+.price{
+  align-self: self-end;
+ padding: 12x;
+margin:5px;
+height: 35px;
+width: 100px;
+
+}
+
+/* Signup page */
+
+.sign1{
+  display:flex;
+/*   border: 2px solid black; */
+  margin: 50px auto;
+  width: 60%;
+  flex-direction:column;
+}
+
+.sign
+{
+  display:flex;
+/*   border: 2px solid black; */
+  margin: 50px auto;
+  width: 60%;
+  height:500px;
+  flex-direction:column;
+}
+
+.into
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.signbtn
+{
+width: 30%;
+
+}
+
+.sign-up
+{
+  margin:30px;
+}
+
+
+/* Heading (h3) */
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+/* Paragraph (p) */
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px; 
+  font-weight: normal; 
+}
